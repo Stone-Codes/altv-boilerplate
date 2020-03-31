@@ -1,0 +1,1 @@
+![Node.js CI](https://github.com/Stone-Codes/altv-boilerplate-linux/workflows/Node.js%20CI/badge.svg) ![Docker Image CI](https://github.com/Stone-Codes/altv-boilerplate-linux/workflows/Docker%20Image%20CI/badge.svg)
