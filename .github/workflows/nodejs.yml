@@ -13,12 +13,14 @@ jobs:
         node-version: [12.x, 13.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Setup Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install deps
-      run: yarn install
-      env:
-        CI: true
+      - uses: actions/checkout@v2
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install deps
+        run: cd resources/myresource/client/src/views && yarn install
+      - name: Build views
+        run: cd resources/myresource/client/src/views && yarn build
+        env:
+          CI: true
