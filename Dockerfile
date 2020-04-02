@@ -22,6 +22,9 @@ COPY libnode.so.72 /app/libnode.so.72
 COPY server.cfg /app/server.cfg
 COPY start.sh /app/start.sh
 
+RUN cd resources/myresource && yarn install
+RUN cd resources/myresource && yarn build
+
 RUN chmod +x /app/start.sh
 RUN chmod +x /app/altv-server
 
