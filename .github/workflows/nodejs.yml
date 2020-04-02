@@ -18,8 +18,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install deps
+      - name: Install view deps
         run: cd resources/myresource/client/src/views && yarn install
+      - name: Install resource deps
         run: cd resources/myresource && yarn install
       - name: Build views
         run: cd resources/myresource/client/src/views && yarn build
