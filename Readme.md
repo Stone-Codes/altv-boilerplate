@@ -44,27 +44,28 @@ make views
 
 ### Manually
 
-1. **Dependencies for the resource**
+1. **Dependencies for the resource**<br>
    Go to the `resources/myresource/` folder and run
 
 ```bash
 yarn install
 ```
 
-2. **Dependencies for the views**
+2. **Dependencies for the views**<br>
    Go to the `resources/myresource/client/src/views/` folder and run
 
 ```bash
 yarn install
 ```
 
-3. **Running / building**
-   If you just want to build the files once run inside `resources/myresource/`
+3. **Building**<br>
+If you just want to build the files once run inside `resources/myresource/`
 
 ```bash
 yarn build
 ```
 
+4. **Running**<br>
 If you want the files to be watched and the server to be started after every bundling run inside `resources/myresource/`
 
 ```bash
