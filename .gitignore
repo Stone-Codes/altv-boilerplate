@@ -1,0 +1,4 @@
+node_modules
+*.resource
+resources/myresource/server/main.mjs
+server.log

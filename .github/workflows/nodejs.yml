@@ -20,7 +20,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install deps
         run: cd resources/myresource/client/src/views && yarn install
+        run: cd resources/myresource && yarn install
       - name: Build views
         run: cd resources/myresource/client/src/views && yarn build
+      - name: Build server/client
+        run: cd resources/myresource && yarn build
         env:
           CI: true

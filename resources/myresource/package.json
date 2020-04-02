@@ -1,0 +1,20 @@
+{
+  "name": "myresource",
+  "version": "1.0.0",
+  "description": "Sample resource for alt:v",
+  "main": "index.js",
+  "repository": "https://github.com/Stone-Codes/altv-boilerplate-linux",
+  "author": "Stone-Codes",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@altv/native-types": "^1.0.3",
+    "@altv/types": "^1.0.17",
+    "@rollup/plugin-typescript": "^4.0.0",
+    "rollup": "^2.3.2",
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
+  }
+}
