@@ -8,5 +8,8 @@ build:
 views:
 	cd ./resources/myresource/client/src/views && yarn install && yarn start
 
+build-views:
+	cd ./resources/myresource/client/src/views && yarn install && yarn build
+
 start:
 	cd ./resources/myresource && yarn install && yarn start

@@ -5,9 +5,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import EventEmitter from 'events'
 
-if (window.alt === undefined) {
-  window.alt = new EventEmitter()
+declare global {
+    interface Window { alt: EventEmitter; }
 }
+
+window.alt = window.alt || new EventEmitter;
 
 ReactDOM.render(
   <React.StrictMode>
