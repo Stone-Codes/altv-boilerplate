@@ -9,7 +9,7 @@ declare global {
     interface Window { alt: EventEmitter; }
 }
 
-window.alt = window.alt || new EventEmitter;
+window.alt = window.alt || new EventEmitter();
 
 ReactDOM.render(
   <React.StrictMode>
