@@ -3,6 +3,9 @@ import logo from "./logo.svg";
 import "./App.css";
 
 const App = () => {
+  const handleCloseView = ():void => {
+     window.alt.emit("close_greeting");
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +22,7 @@ const App = () => {
           Learn React
         </a>
       </header>
+      <button onClick={handleCloseView}>Close this page</button>
     </div>
   );
 };
