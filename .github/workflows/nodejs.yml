@@ -22,6 +22,8 @@ jobs:
         run: cd resources/myresource/client/src/views && yarn install
       - name: Install resource deps
         run: cd resources/myresource && yarn install
+      - name: Test views
+        run: cd resources/myresource/client/src/views && yarn test
       - name: Build views
         run: cd resources/myresource/client/src/views && yarn build
       - name: Build server/client

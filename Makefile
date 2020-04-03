@@ -11,5 +11,8 @@ views:
 build-views:
 	cd ./resources/myresource/client/src/views && yarn install && yarn build
 
+test-views:
+	cd ./resources/myresource/client/src/views && yarn install && yarn test
+
 start:
 	cd ./resources/myresource && yarn install && yarn start
