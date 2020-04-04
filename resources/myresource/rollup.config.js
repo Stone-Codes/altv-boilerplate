@@ -14,7 +14,13 @@ export default [
     plugins: [
       typescript({
         tsconfig: tsconfigPath,
+        typeRoots: [
+          "node_modules/@altv",
+          "node_modules/@types",
+          "custom-types",
+        ],
         include: ["server/**/*"],
+        exclude: ["server/src/tests/**/*"],
       }),
     ],
   },
@@ -28,6 +34,11 @@ export default [
     plugins: [
       typescript({
         tsconfig: tsconfigPath,
+        typeRoots: [
+          "node_modules/@altv",
+          "node_modules/@types",
+          "custom-types",
+        ],
         include: ["client/**/*"],
         exclude: ["client/src/views/**/*"],
       }),
