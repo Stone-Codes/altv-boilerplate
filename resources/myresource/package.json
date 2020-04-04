@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
-    "start": "concurrently --raw \"rollup -c --watch\" \"chokidar 'server/main.mjs' -c 'node buildtools/chokidar-helper.js'\""
+    "start": "concurrently --raw \"rollup -c --watch\" \"chokidar 'server/main.mjs' 'client/main.js' -c 'node buildtools/chokidar-helper.js'\""
   },
   "devDependencies": {
     "@altv/native-types": "^1.0.3",

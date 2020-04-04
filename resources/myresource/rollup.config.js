@@ -8,29 +8,29 @@ export default [
     input: path.resolve(__dirname, "server", "src", "index.ts"),
     output: {
       file: path.resolve(__dirname, "server", "main.mjs"),
-      format: "es"
+      format: "es",
     },
     external: ["alt-server", "alt-client"],
     plugins: [
       typescript({
         tsconfig: tsconfigPath,
-        include: ["server/**/*"]
-      })
-    ]
+        include: ["server/**/*"],
+      }),
+    ],
   },
   {
     input: path.resolve(__dirname, "client", "src", "index.ts"),
     output: {
       file: path.resolve(__dirname, "client", "main.js"),
-      format: "es"
+      format: "es",
     },
     external: ["alt-server", "alt-client"],
     plugins: [
       typescript({
         tsconfig: tsconfigPath,
         include: ["client/**/*"],
-        exclude: ["client/src/views/**/*"]
-      })
-    ]
-  }
+        exclude: ["client/src/views/**/*"],
+      }),
+    ],
+  },
 ];

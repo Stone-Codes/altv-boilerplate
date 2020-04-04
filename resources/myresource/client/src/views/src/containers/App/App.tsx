@@ -3,9 +3,9 @@ import logo from "./logo.svg";
 import "./App.css";
 
 const App = () => {
-  const handleCloseView = ():void => {
-     window.alt.emit("close_greeting");
-  }
+  const handleCloseView = (): void => {
+    window.alt.emit("close_greeting");
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -13,16 +13,8 @@ const App = () => {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button onClick={handleCloseView}>Close this page</button>
       </header>
-      <button onClick={handleCloseView}>Close this page</button>
     </div>
   );
 };
