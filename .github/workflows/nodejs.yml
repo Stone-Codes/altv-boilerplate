@@ -26,8 +26,15 @@ jobs:
         run: cd resources/myresource/client/src/views && yarn test
       - name: Test server/client
         run: cd resources/myresource && yarn test
-      - name: Build views
-        run: cd resources/myresource/client/src/views && yarn build
+      
+        env:
+          CI: true
+      - name: Upload Coverage
+        run: npx codecov
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      - name: Build views:  
+      run: cd resources/myresource/client/src/views && yarn build
       - name: Build server/client
         run: cd resources/myresource && yarn build
         env:
