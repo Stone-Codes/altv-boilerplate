@@ -16,8 +16,11 @@
     "sourceMap": false,
 
     "rootDir": "./",
-    "typeRoots": ["node_modules/@altv", "node_modules/@types", "custom-types"]
-  },
-  "include": ["server/**/*"]
-  // "include": ["server/**/*"]
+    "typeRoots": [
+      "node_modules/@altv",
+      "node_modules/@types",
+      "node_modules/@babel",
+      "custom-types"
+    ]
+  }
 }
