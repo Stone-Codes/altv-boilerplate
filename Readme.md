@@ -1,6 +1,7 @@
 # alt:V Boilerplate with Typescript + React for linux
 
 ![Node.js CI](https://github.com/Stone-Codes/altv-boilerplate-linux/workflows/Node.js%20CI/badge.svg) ![Docker Image CI](https://github.com/Stone-Codes/altv-boilerplate-linux/workflows/Docker%20Image%20CI/badge.svg)
+[![codecov](https://codecov.io/gh/Stone-Codes/altv-boilerplate-linux/branch/master/graph/badge.svg)](https://codecov.io/gh/Stone-Codes/altv-boilerplate-linux)
 
 This project is a small boilerplate to start out with using Typescript + React with alt.V
 
