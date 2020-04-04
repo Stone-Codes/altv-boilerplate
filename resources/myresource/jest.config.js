@@ -9,4 +9,5 @@ module.exports = {
   moduleNameMapper: {
     "^alt-server": "<rootDir>/alt-mock.ts",
   },
+  collectCoverage: true,
 };

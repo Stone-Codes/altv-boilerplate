@@ -5,3 +5,4 @@ server.log
 cache
 resources/myresource/client/main.js
 yarn-error.log
+coverage
