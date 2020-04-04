@@ -16,3 +16,6 @@ test-views:
 
 start:
 	cd ./resources/myresource && yarn install && yarn start
+
+test:
+	cd ./resources/myresource && yarn install && yarn test

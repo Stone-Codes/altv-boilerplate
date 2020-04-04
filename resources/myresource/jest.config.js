@@ -1,9 +1,11 @@
 module.exports = {
   globals: {
     "ts-jest": {
-      tsConfig: "<rootDir>/tsconfig.json",
+      tsConfig: "./tsconfig.json",
+      babelConfig: true,
     },
   },
+  preset: "ts-jest",
   moduleNameMapper: {
     "^alt-server": "<rootDir>/alt-mock.ts",
   },
