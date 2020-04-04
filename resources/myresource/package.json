@@ -8,18 +8,24 @@
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
-    "start": "concurrently --raw \"rollup -c --watch\" \"chokidar 'server/main.mjs' 'client/main.js' -c 'node buildtools/chokidar-helper.js'\""
+    "start": "concurrently --raw \"rollup -c --watch\" \"chokidar 'server/main.mjs' 'client/main.js' -c 'node buildtools/chokidar-helper.js'\"",
+    "test": "jest /server --config=./jest.config.js"
   },
   "devDependencies": {
     "@altv/native-types": "^1.0.3",
     "@altv/types": "^1.0.17",
     "@rollup/plugin-typescript": "^4.0.0",
+    "@types/jest": "^25.2.1",
     "@types/node": "^13.11.0",
+    "@types/rewire": "^2.5.28",
     "chokidar-cli": "^2.1.0",
     "concurrently": "^5.1.0",
+    "jest": "^25.2.7",
     "ps-node": "^0.1.6",
+    "rewire": "^5.0.0",
     "rollup": "^2.3.2",
     "rollup-plugin-execute": "^1.1.1",
+    "ts-jest": "^25.3.1",
     "tslib": "^1.11.1",
     "typescript": "^3.8.3"
   }

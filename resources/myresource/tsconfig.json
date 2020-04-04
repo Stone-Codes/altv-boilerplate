@@ -1,11 +1,10 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "lib": ["es5", "es6", "esnext"],
+    "lib": ["es6"],
     "module": "es6",
     "moduleResolution": "node",
     "target": "es6",
-
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "removeComments": true,
@@ -18,5 +17,7 @@
 
     "rootDir": "./",
     "typeRoots": ["node_modules/@altv", "node_modules/@types", "custom-types"]
-  }
+  },
+  "include": ["server/**/*"]
+  // "include": ["server/**/*"]
 }

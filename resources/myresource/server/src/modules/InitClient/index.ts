@@ -1,3 +1,4 @@
+//this is a test
 import { on, emitClient, Player } from "alt-server";
 const sendClientVariables = (player: Player) => {
   emitClient(player, "init_client", {
