@@ -1,8 +1,4 @@
-export const on = () => {};
-export const emitClient = () => {};
-export const onClient = () => {};
-
-export class Player {
+export default class Player {
   name: string;
   model: string;
   constructor(name: string) {
@@ -14,6 +10,4 @@ export class Player {
   };
 }
 
-export const log = (text: string) => {
-  console.log(text);
-};
+export const testPlayer = new Player("testuser");
