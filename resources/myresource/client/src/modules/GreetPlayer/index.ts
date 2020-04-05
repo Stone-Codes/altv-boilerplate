@@ -1,15 +1,18 @@
 import { onServer, log, WebView, showCursor } from "alt-client";
-import { generateViewLink } from '../utils'
+import { generateViewLink } from "../utils";
 
-onServer("greet_player_console", () => {
+const greetConsole = () => {
   log("Hello player");
-});
+};
 
-onServer("greet_player_cef", () => {
-  const greetingView = new WebView(generateViewLink(''))
-  showCursor(true)
-  greetingView.on('close_greeting', () => {
-    greetingView.destroy()
-    showCursor(false)
-  })
-})
+const greetWebview = () => {
+  const greetingView = new WebView(generateViewLink(""));
+  showCursor(true);
+  greetingView.on("close_greeting", () => {
+    greetingView.destroy();
+    showCursor(false);
+  });
+};
+
+onServer("greet_player_console", greetConsole);
+onServer("greet_player_cef", greetWebview);
