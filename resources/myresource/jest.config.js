@@ -11,6 +11,6 @@ module.exports = {
     "^alt-client": "<rootDir>/alt-mock/alt-client-mock.ts",
   },
   collectCoverage: true,
-  collectCoverageFrom: ["server/**/*.ts", "client/**/*.ts"],
-  testPathIgnorePatterns: ["client/src/views"],
+  collectCoverageFrom: ["server/**/*.ts", "client/src/modules/**/*.ts"],
+  testPathIgnorePatterns: ["client/src/views/*"],
 };

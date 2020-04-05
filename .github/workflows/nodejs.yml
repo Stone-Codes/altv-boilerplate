@@ -31,7 +31,7 @@ jobs:
         env:
           CI: true
       - name: Upload Coverage
-        run: npx codecov
+        run: npx codecov --disable=gcov
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       - name: Build views
