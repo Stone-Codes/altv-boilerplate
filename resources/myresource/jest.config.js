@@ -10,4 +10,5 @@ module.exports = {
     "^alt-server": "<rootDir>/alt-mock.ts",
   },
   collectCoverage: true,
+  testPathIgnorePatterns: ["client/src/views"],
 };
